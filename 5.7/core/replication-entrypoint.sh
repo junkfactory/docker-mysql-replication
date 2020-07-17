@@ -51,7 +51,7 @@ else
     echo "Waiting for ${MASTER_HOST}:${MASTER_PORT} ..."
     sleep 1;
     ((max=max-1))
-    if [ $max == 0 ]]; then
+    if [[ $max == 0 ]]; then
       echo "Giving up, master is not coming on on ${MASTER_HOST}:${MASTER_PORT}!!!"
       exit 2;
     fi
