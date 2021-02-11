@@ -53,5 +53,5 @@ On linux machines, the files may be owned by the root user
 ## Check replication status
 
 ```
-docker exec -it mysql_slave mysql -uroot -pmysqlroot -e "SHOW SLAVE STATUS\G;"
+docker exec -it mysql_slave mysql -uroot -p111 -e "SHOW SLAVE STATUS\G;"
 ```
